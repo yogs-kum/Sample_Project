@@ -139,7 +139,7 @@
             this.cmbCountry.Location = new System.Drawing.Point(163, 105);
             this.cmbCountry.Name = "cmbCountry";
             this.cmbCountry.Size = new System.Drawing.Size(130, 21);
-            this.cmbCountry.TabIndex = 15;
+            this.cmbCountry.TabIndex = 12;
             // 
             // label3
             // 

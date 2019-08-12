@@ -73,6 +73,7 @@ namespace SampleProject
                 else
                 {
                     MessageBox.Show("No Address Found.Please Edit Person to Add Address", "Message");
+                    grdAddresses.DataSource = null;
                 }
             }
         }
@@ -160,6 +161,50 @@ namespace SampleProject
                 CRUDAddress crdper = new CRUDAddress(Convert.ToInt32(grdAddresses.CurrentRow.Cells[5].Value), Convert.ToInt32(grdAddresses.CurrentRow.Cells[4].Value));
                 crdper.ShowDialog(this);
                 btnSearch_Click(this, e);
+            }
+        }
+
+        private void btnExportPer_Click(object sender, EventArgs e)
+        {
+            if (grdNames.DataSource != null)
+            {
+                DataTable dt = (DataTable)grdNames.DataSource;
+                SaveFileDialog sav = new SaveFileDialog();
+                sav.Filter = "XML|*.xml";
+                if (sav.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        dt.WriteXml(sav.FileName);
+                        MessageBox.Show("File Saved Successfully", "Success");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                    }
+                }
+            }
+        }
+
+        private void btnExportAdr_Click(object sender, EventArgs e)
+        {
+            if (grdAddresses.DataSource != null)
+            {
+                DataTable dt = (DataTable)grdAddresses.DataSource;
+                SaveFileDialog sav = new SaveFileDialog();
+                sav.Filter = "XML|*.xml";
+                if (sav.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        dt.WriteXml(sav.FileName);
+                        MessageBox.Show("File Saved Successfully", "Success");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                    }
+                }
             }
         }
     }

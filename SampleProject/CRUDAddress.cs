@@ -82,7 +82,6 @@ namespace SampleProject
             {
                 if (dsAddress.Tables[0].Select("[Line 1] = '" + txtAddressLine1.Text.Trim() + "' and [Line 2] = '" + txtAddressLine2.Text.Trim() + "' and [Country] = '" + cmbCountry.Text.Trim() + "' and [PIN] = '" + txtPostCode.Text.Trim() + "'").FirstOrDefault() != null)
                 {
-
                     MessageBox.Show("Address Already Exists", "Error");
                     return;
 

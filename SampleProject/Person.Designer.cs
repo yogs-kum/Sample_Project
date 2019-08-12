@@ -42,6 +42,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnExportPer = new System.Windows.Forms.Button();
+            this.btnExportAdr = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdAddresses)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdNames)).BeginInit();
@@ -49,6 +53,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnClear);
             this.groupBox1.Controls.Add(this.grdAddresses);
             this.groupBox1.Controls.Add(this.grdNames);
@@ -66,7 +72,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(843, 23);
+            this.btnClear.Location = new System.Drawing.Point(843, 12);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 34);
             this.btnClear.TabIndex = 7;
@@ -90,7 +96,7 @@
             this.grdAddresses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdAddresses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdAddresses.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.grdAddresses.Location = new System.Drawing.Point(443, 77);
+            this.grdAddresses.Location = new System.Drawing.Point(443, 91);
             this.grdAddresses.Name = "grdAddresses";
             this.grdAddresses.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grdAddresses.RowHeadersVisible = false;
@@ -114,7 +120,7 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grdNames.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.grdNames.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.grdNames.Location = new System.Drawing.Point(22, 77);
+            this.grdNames.Location = new System.Drawing.Point(22, 91);
             this.grdNames.Name = "grdNames";
             this.grdNames.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grdNames.RowHeadersVisible = false;
@@ -127,7 +133,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(743, 23);
+            this.btnSearch.Location = new System.Drawing.Point(743, 12);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(94, 34);
             this.btnSearch.TabIndex = 4;
@@ -137,7 +143,7 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(497, 34);
+            this.txtLastName.Location = new System.Drawing.Point(497, 23);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(229, 20);
             this.txtLastName.TabIndex = 3;
@@ -146,7 +152,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(380, 29);
+            this.label2.Location = new System.Drawing.Point(380, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 23);
             this.label2.TabIndex = 2;
@@ -154,7 +160,7 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(138, 34);
+            this.txtFirstName.Location = new System.Drawing.Point(138, 23);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(224, 20);
             this.txtFirstName.TabIndex = 1;
@@ -163,7 +169,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 29);
+            this.label1.Location = new System.Drawing.Point(18, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 23);
             this.label1.TabIndex = 0;
@@ -172,7 +178,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(304, 474);
+            this.btnAdd.Location = new System.Drawing.Point(48, 475);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(117, 34);
             this.btnAdd.TabIndex = 5;
@@ -183,7 +189,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(543, 474);
+            this.btnDelete.Location = new System.Drawing.Point(287, 475);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(144, 34);
             this.btnDelete.TabIndex = 6;
@@ -194,7 +200,7 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(427, 474);
+            this.btnEdit.Location = new System.Drawing.Point(171, 475);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(110, 34);
             this.btnEdit.TabIndex = 7;
@@ -202,11 +208,55 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 65);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Person";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(439, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 23);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Address";
+            // 
+            // btnExportPer
+            // 
+            this.btnExportPer.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportPer.Location = new System.Drawing.Point(437, 475);
+            this.btnExportPer.Name = "btnExportPer";
+            this.btnExportPer.Size = new System.Drawing.Size(144, 34);
+            this.btnExportPer.TabIndex = 8;
+            this.btnExportPer.Text = "Export Person";
+            this.btnExportPer.UseVisualStyleBackColor = true;
+            this.btnExportPer.Click += new System.EventHandler(this.btnExportPer_Click);
+            // 
+            // btnExportAdr
+            // 
+            this.btnExportAdr.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportAdr.Location = new System.Drawing.Point(587, 475);
+            this.btnExportAdr.Name = "btnExportAdr";
+            this.btnExportAdr.Size = new System.Drawing.Size(144, 34);
+            this.btnExportAdr.TabIndex = 9;
+            this.btnExportAdr.Text = "Export Address";
+            this.btnExportAdr.UseVisualStyleBackColor = true;
+            this.btnExportAdr.Click += new System.EventHandler(this.btnExportAdr_Click);
+            // 
             // Person
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 524);
+            this.Controls.Add(this.btnExportAdr);
+            this.Controls.Add(this.btnExportPer);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
@@ -238,5 +288,9 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnExportPer;
+        private System.Windows.Forms.Button btnExportAdr;
     }
 }
