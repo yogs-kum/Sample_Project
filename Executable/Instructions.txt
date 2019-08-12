@@ -1,0 +1,11 @@
+Steps to run the application on Windows Machine 
+
+1) Download .NET framework latest version from Microsoft website if not installed on your machine 
+2) If microsoft SQL Server is not installed on your machine , please download and install it also.
+3) Run the Codis_DB script file .
+4) Open App.Config in Notepad 
+5) Change the connection string to your instance of SQL Server 
+6) Run the project once in Visual Studio 2015. 
+6) Open SampleProject Folder given with this file 
+7) Run the SampleProject executable with the Type as Application
+8) The application will run successfully . 
