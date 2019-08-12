@@ -1,0 +1,11 @@
+E:\yogesh\Codis\SampleProject\SampleProject\bin\Debug\SampleProject.exe.config
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.csprojResolveAssemblyReference.cache
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.Person.resources
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.Properties.Resources.resources
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.csproj.GenerateResource.Cache
+E:\yogesh\Codis\SampleProject\SampleProject\bin\Debug\SampleProject.exe
+E:\yogesh\Codis\SampleProject\SampleProject\bin\Debug\SampleProject.pdb
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.exe
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.pdb
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.CRUDPerson.resources
+E:\yogesh\Codis\SampleProject\SampleProject\obj\Debug\SampleProject.CRUDAddress.resources
